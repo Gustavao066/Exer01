@@ -1,0 +1,62 @@
+import org.w3c.dom.ls.LSOutput;
+
+public class Carros {
+    private String ano;
+    private String marca;
+    private int preço;
+    private String carro;
+
+    public Carros( String ano, String marca, int preço, String carro) {
+        this.ano = ano;
+        this.marca = marca;
+        this.preço = preço;
+        this.carro = carro;
+    }
+
+    public String getAno() {
+        return ano;
+    }
+    public String getMarca() {
+        return marca;
+    }
+
+    public int getPreço() {
+        return preço;
+    }
+    public String getCarro() {
+        return carro;
+    }
+
+    public void setAno(String ano) {
+        if (ano <= 0) {
+            throw new IllegalArgumentException("ano inválido: ");
+        } else {
+            this.ano = ano;
+        }
+        public void setmarca(String marca) {
+        if (marca.isBlank() || marca.isEmpty() ) {
+            throw new IllegalArgumentException("marca inválida: ");
+        }else {
+            this.marca = marca;
+        }
+        public void setcarro(String carro) {
+            if (carro.isBlank() || carro.isEmpty()) {
+                throw new IllegalArgumentException("Carro inválido: ");
+            } else {
+                this.carro = carro;
+            }
+
+            public void setpreço(int preço) {
+                if (preço.isBlank || preço.isEmpty()) {
+                    throw new IllegalArgumentException("Preço inválido: ");
+                } else {
+                    this.preço = preço;
+                }
+                }
+                }
+            }
+
+    }
+}
+
+
